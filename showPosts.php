@@ -9,6 +9,7 @@ $result = mysqli_query($conn,$query);
 
 $post = mysqli_fetch_assoc($result);
 
+// for showing 404
 if($post){
 
 }else {
