@@ -3,9 +3,9 @@ session_start();
 
 include "./db/env.php";
 
-$query = "SELECT * FROM posts";
+$query = "SELECT * FROM post";
 $res = mysqli_query($conn, $query);
-$posts = mysqli_fetch_all($res,1);
+$post = mysqli_fetch_all($res,1);
 
 
 
@@ -65,8 +65,8 @@ $posts = mysqli_fetch_all($res,1);
             </tr>
              <?php
 
-             if(count($posts) > 0){
-                foreach($posts as $key=> $post){ 
+             if(count($post) > 0){
+                foreach($post as $key=> $post){ 
                     ?>
                 
                 <tr>

@@ -35,7 +35,7 @@ if(count($errors) > 0 ){
 
 }else {
     //* proceed
-    $query = "UPDATE posts SET title='$title',detail='$details',author='$author' WHERE id =$id";
+    $query = "UPDATE post SET title='$title',detail='$details',author='$author' WHERE id =$id";
     $res = mysqli_query($conn, $query);
     var_dump($res);
 

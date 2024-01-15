@@ -34,7 +34,7 @@ if(count($errors) > 0){
   // REDIRECTION
   header("Location: ../index.php");
 }else {
-    $query = "INSERT INTO posts(title, detail, author) VALUES ('$title','$details','$author')";
+    $query = "INSERT INTO post(title, detail, author) VALUES ('$title','$details','$author')";
     $res = mysqli_query($conn,$query);
     var_dump($res);
     if($res){

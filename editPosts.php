@@ -4,7 +4,7 @@ session_start();
 include "./db/env.php";
 
 $id = $_REQUEST["post_id"];
-$query = "SELECT * FROM posts WHERE id= $id";
+$query = "SELECT * FROM post WHERE id= $id";
 $result = mysqli_query($conn,$query);
 
 $post = mysqli_fetch_assoc($result);
